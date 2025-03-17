@@ -58,3 +58,47 @@ nav {
     color: lightgray;
     font-weight: 400;
 }
+
+.footerMenu {
+    display: flex;
+    justify-content: space-between;
+    padding: 20px;
+    background-color: #f1f1f1;
+}
+
+.footerItem {
+    flex: 1;
+    margin: 0 10px;
+}
+
+.footerItem h3 {
+    margin-bottom: 10px;
+}
+
+.footerItem ul {
+    list-style: none;
+    padding: 0;
+}
+
+.footerItem ul li {
+    margin-bottom: 5px;
+}
+
+.footerItem ul li a {
+    text-decoration: none;
+    color: #000;
+}
+
+.footerItem ul li a:hover {
+    text-decoration: underline;
+}
+
+.socialIcons {
+    display: flex;
+    gap: 10px;
+}
+
+.socialIcons a img {
+    width: 24px;
+    height: 24px;
+}
