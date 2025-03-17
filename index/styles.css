@@ -91,6 +91,7 @@ nav {
 
 .footerItem ul li a:hover {
     text-decoration: underline;
+    text-decoration-color: purple;
 }
 
 .socialIcons {
