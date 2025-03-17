@@ -1,5 +1,5 @@
 body {
-    font-family: "Oswald", sans-serif ;
+    font-family: "Oswald", sans-serif;
     padding: 0;
     margin: 0;
 }
@@ -18,9 +18,25 @@ nav {
     display: flex;
     align-items: center;
     justify-content: space-between;
-    margin-left: -50px;
 }
 
+.logoContainer {
+    flex: 1;
+    display: flex;
+    justify-content: flex-start;
+}
+
+.searchContainer {
+    flex: 2;
+    display: flex;
+    justify-content: center;
+}
+
+.limitedOfferContainer {
+    flex: 1;
+    display: flex;
+    justify-content: flex-end;
+}
 
 .search {
     display: flex;
@@ -28,7 +44,6 @@ nav {
     background-color: gray;
     padding: 10px 20px;
     border-radius: 10px;
-    margin-right: 75px;
 }
 
 .searchInput {
@@ -90,8 +105,7 @@ nav {
 }
 
 .footerItem ul li a:hover {
-    text-decoration: underline;
-    text-decoration-color: purple;
+    border-bottom: 2px solid purple;
 }
 
 .socialIcons {
