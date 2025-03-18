@@ -69,6 +69,14 @@ nav {
     justify-content: center;
 }
 
+.menuItem.active {
+    color: red;
+    font-weight: bold;
+    border-bottom: 2px solid red;
+    margin-right: 50px;
+}
+
+
 .menuItem {
     margin-right: 50px;
     cursor: pointer;
