@@ -69,11 +69,16 @@ nav {
     justify-content: center;
 }
 
-.menuItem.active {
-    color: red;
-    font-weight: bold;
-    border-bottom: 2px solid red;
+.menuItemActive {
     margin-right: 50px;
+    cursor: pointer;
+    color: lightgray;
+    font-weight: 400;
+    border-bottom: 2px solid purple;
+}
+
+a {
+    text-decoration: none;
 }
 
 
