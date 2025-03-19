@@ -60,6 +60,7 @@ nav {
 .searchInput {
     border: none;
     background-color: transparent;
+    cursor: default;
 }
 
 .searchInput::placeholder {
