@@ -333,6 +333,7 @@ main {
     margin-bottom: 5px;
     font-weight: bold;
     color: #333;
+} 
 
 .formGroup input,
 .formGroup textarea {
@@ -382,5 +383,3 @@ main {
     box-shadow: 0 4px 6px rgba(0, 0, 0, 0.2); 
     background: linear-gradient(90deg, #3a003a, #4b004b); 
 }
-
-
