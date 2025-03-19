@@ -394,7 +394,7 @@ a {
 }
 
 .cart-item button {
-    background-color: red;
+    background-color: purple;
     color: white;
     border: none;
     border-radius: 3px;
@@ -403,7 +403,7 @@ a {
 }
 
 .cart-item button:hover {
-    background-color: darkred;
+    background-color: darkmagenta;
 }
 
 .total-price {
