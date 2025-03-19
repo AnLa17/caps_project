@@ -232,3 +232,18 @@ p {
     text-align: justify; 
     margin-bottom: 30px; 
 }
+
+main {
+    max-width: 1200px; 
+    margin: 0 auto; 
+    padding: 20px; 
+    color: #666; 
+    font-size: 1rem; 
+    line-height: 1.6; 
+}
+
+.teamImage {
+    text-align: center; 
+}
+
+
