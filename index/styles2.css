@@ -319,7 +319,7 @@ main {
 .contactForm h2 {
     margin-bottom: 20px;
     font-size: 1.5rem;
-    color: grey; /* Purple für die Überschrift */
+    color: grey; 
     text-transform: uppercase;
     letter-spacing: 1px;
 }
@@ -332,15 +332,14 @@ main {
     display: block;
     margin-bottom: 5px;
     font-weight: bold;
-    color: #333; /* Labels in Grau */
-}
+    color: #333;
 
 .formGroup input,
 .formGroup textarea {
     width: 100%;
     padding: 10px;
-    border: none; /* Kein Rahmen */
-    border-bottom: 2px solid #ccc; /* Nur unterer Rahmen */
+    border: none; 
+    border-bottom: 2px solid #ccc; 
     background-color: transparent;
     color: #333;
     font-size: 1rem;
@@ -349,39 +348,39 @@ main {
 
 .formGroup input::placeholder,
 .formGroup textarea::placeholder {
-    color: #aaa; /* Platzhalter in hellem Grau */
+    color: #aaa; 
 }
 
 .formGroup input:focus,
 .formGroup textarea:focus {
     outline: none;
-    border-bottom: 2px solid #800080; /* Purple beim Fokus */
+    border-bottom: 2px solid #800080; 
 }
 
 .submitButton {
-    background: linear-gradient(90deg, #800080, #4b0082); /* Farbverlauf von Purple zu Dunkelviolett */
-    color: white; /* Weißer Text */
-    padding: 15px 30px; /* Größerer Button für bessere Sichtbarkeit */
+    background: linear-gradient(90deg, #800080, #4b0082); 
+    color: white; 
+    padding: 15px 30px; 
     border: none;
-    border-radius: 50px; /* Runde Ecken für einen modernen Look */
+    border-radius: 50px; 
     font-size: 1rem;
     font-weight: bold;
     text-transform: uppercase;
     cursor: pointer;
-    transition: all 0.3s ease; /* Sanfte Übergänge für Hover-Effekte */
-    box-shadow: 0 4px 6px rgba(0, 0, 0, 0.2); /* Leichter Schatten */
+    transition: all 0.3s ease; 
+    box-shadow: 0 4px 6px rgba(0, 0, 0, 0.2); 
 }
 
 .submitButton:hover {
-    background: linear-gradient(90deg, #4b0082, #800080); /* Umgekehrter Farbverlauf beim Hover */
-    transform: scale(1.1); /* Leichte Vergrößerung beim Hover */
-    box-shadow: 0 8px 12px rgba(0, 0, 0, 0.3); /* Stärkerer Schatten beim Hover */
+    background: linear-gradient(90deg, #4b0082, #800080); 
+    transform: scale(1.1); 
+    box-shadow: 0 8px 12px rgba(0, 0, 0, 0.3); 
 }
 
 .submitButton:active {
-    transform: scale(1.05); /* Leichte Verkleinerung beim Klicken */
-    box-shadow: 0 4px 6px rgba(0, 0, 0, 0.2); /* Schatten zurücksetzen */
-    background: linear-gradient(90deg, #3a003a, #4b004b); /* Dunklerer Farbverlauf beim Klicken */
+    transform: scale(1.05); 
+    box-shadow: 0 4px 6px rgba(0, 0, 0, 0.2); 
+    background: linear-gradient(90deg, #3a003a, #4b004b); 
 }
 
 
