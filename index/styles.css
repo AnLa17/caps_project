@@ -77,7 +77,36 @@ nav {
 .navBottom {
     display: flex;
     align-items: center;
-    justify-content: center;
+    justify-content: space-between; /* Menü zentrieren, Icons rechts */
+    gap: 20px; /* Abstand zwischen den Containern */
+    flex-wrap: wrap; /* Responsive Design bei schmalen Bildschirmen */
+}
+
+.menuItems {
+    flex: 1;
+    display: flex;
+    justify-content: center; /* Menüelemente zentrieren */
+    gap: 50px; /* Abstand zwischen Menüelementen */
+    margin-left: 200px;
+}
+
+.underlimitedOfferIcons {
+    display: flex;
+    gap: 15px;
+    justify-content: flex-end; /* Icons rechtsbündig ausrichten */
+    flex-shrink: 0; /* Verhindert, dass Icons skaliert werden */
+}
+
+.underlimitedOfferIcons img {
+    width: 30px;
+    height: 30px;
+    cursor: pointer;
+    transition: transform 0.3s, opacity 0.3s;
+}
+
+.underlimitedOfferIcons img:hover {
+    transform: scale(1.2);
+    opacity: 0.8;
 }
 
 .menuItemActive {
@@ -98,6 +127,12 @@ a {
     cursor: pointer;
     color: lightgray;
     font-weight: 400;
+}
+
+.menuItem:hover {
+    color: purple;
+    transform: scale(1.1);
+    cursor: pointer;
 }
 
 .footerMenu {
@@ -330,5 +365,3 @@ a {
 }
 
 
-
-  
