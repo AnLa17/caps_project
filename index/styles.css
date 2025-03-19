@@ -233,6 +233,15 @@ a {
     padding: 20px;
     height: 300px;
     width: 500px;
+    text-align: center;
+    flex-direction: column;
+}
+
+.center-block h1 {
+    margin-bottom: 20px;
+    font-size: 2em;
+    color: white;
+    margin-bottom: 80px;
 }
   
 .button {
