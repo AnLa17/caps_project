@@ -9,3 +9,4 @@ function showNextSlide() {
 
 slides[currentIndex].classList.add('active');
 setInterval(showNextSlide, 4500);
+
