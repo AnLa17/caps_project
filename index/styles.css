@@ -429,6 +429,7 @@ a {
     cursor: pointer; 
     transition: background-color 0.3s ease, transform 0.2s ease;
     margin-top: 20px; 
+}
 
 .checkout-button:hover {
     background-color: darkmagenta;
@@ -503,11 +504,9 @@ a {
     cursor: pointer;
     font-size: 14px;
     transition: background-color 0.3s ease;
-    margin-left: 10px; /* Abstand zum Text */
+    margin-left: 10px; 
 }
 
 .remove-button:hover {
     background-color: grey;
 }
-
-
