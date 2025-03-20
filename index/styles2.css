@@ -13,7 +13,7 @@ nav {
     position: fixed; /* Fixiert die Navbar beim Scrollen */
     top: 0; 
     left: 0; 
-    width: 96%; 
+    width: 96%;
     z-index: 1000; /* Stellt sicher, dass die Navbar über anderen Elementen liegt */
     background-color: black; 
     box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1); 
@@ -141,16 +141,28 @@ a {
     cursor: pointer;
 }
 
+footer {
+    max-width: 100%; 
+    margin: 0 auto; 
+    padding: 0;
+    overflow: hidden; 
+}
+
 .footerMenu {
     display: flex;
-    justify-content: space-between;
+    justify-content: space-evenly;
+    align-items: flex-start;
+    text-align: left;
     padding: 20px;
     background-color: #f1f1f1;
+    flex-wrap: wrap;
 }
 
 .footerItem {
     flex: 1;
-    margin: 0 10px;
+    margin: 0 20px;
+    max-width: 300px;
+    text-align: center;
 }
 
 .footerItem h3 {
@@ -163,6 +175,7 @@ a {
 .footerItem ul {
     list-style: none;
     padding: 0;
+    margin: 0;
 }
 
 .footerItem ul li {
@@ -180,13 +193,24 @@ a {
      
 .socialIcons {
     display: flex;
-    gap: 10px;
+    justify-content: center; 
+    align-items: center; 
+    gap: 10px; 
+    margin: 0 auto; 
+    width: fit-content; 
 }
 
 .socialIcons a img {
     width: 24px;
     height: 24px;
     filter: grayscale(100%); 
+    transition: transform 0.3s, opacity 0.3s;
+    color: grey;
+}
+
+.socialIcons a img:hover {
+    transform: scale(1.2);
+    opacity: 0.8;
 }
 
 .product {
@@ -394,25 +418,25 @@ main {
 }
 
 .dcImage {
-    text-align: left; 
-    margin-left: -110px; 
+    text-align: center;
+    overflow: hidden;
     
 }
 
 .neweraImage {
-    text-align: left; 
-    margin-left: -120px; 
+    text-align: center;
+    overflow: hidden; 
     
 }
 
 .flexfitImage {
-    text-align: left; 
-    margin-left: -110px; 
+    text-align: center;
+    overflow: hidden; 
     
 }
 
 .djinnsImage {
-    text-align: left; 
-    margin-left: -110px; 
+    text-align: center;
+    overflow: hidden;
     
 }
