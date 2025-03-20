@@ -2,6 +2,7 @@ body {
     font-family: "Oswald", sans-serif;
     padding: 0;
     margin: 0;
+    padding-top: 160px; /* Platz für die Navbar */
 }
 
 html {
@@ -9,7 +10,13 @@ html {
 }
 
 nav {
-    background-color: #000;
+    position: fixed; /* Fixiert die Navbar beim Scrollen */
+    top: 0; 
+    left: 0; 
+    width: 96%; 
+    z-index: 1000; /* Stellt sicher, dass die Navbar über anderen Elementen liegt */
+    background-color: black; 
+    box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1); 
     color: white;
     padding: 20px 50px;
 }
@@ -289,7 +296,7 @@ main {
 
 .salesImage {
     text-align: left;
-    margin-left: -100px;
+    margin-left: -110px;
 }
 
 .sale-container {
@@ -386,5 +393,26 @@ main {
     background: linear-gradient(90deg, #3a003a, #4b004b); 
 }
 
+.dcImage {
+    text-align: left; 
+    margin-left: -110px; 
+    
+}
 
+.neweraImage {
+    text-align: left; 
+    margin-left: -120px; 
+    
+}
 
+.flexfitImage {
+    text-align: left; 
+    margin-left: -110px; 
+    
+}
+
+.djinnsImage {
+    text-align: left; 
+    margin-left: -110px; 
+    
+}
