@@ -43,9 +43,15 @@
         </div>
         
     </nav>
-    <main  id="cartContent">
-        <div id="cartItems"></div>
-        <div id="totalPrice"></div>
+    <main id="cartContent">
+        <div id="cartItems" class="cart-items">
+        </div>
+        <div class="cart-summary">
+            <p>Zwischensumme: <span id="subtotal">0.00 €</span></p>
+            <p>Enthaltene Mehrwertsteuer (19%): <span id="tax">0.00 €</span></p>
+            <p>Gesamt: <span id="total">0.00 €</span></p>
+            <button id="checkout-button" class="checkout-button">Zur Kasse</button>
+        </div>
         <script src="cart.js"></script>
     </main>
     <footer>

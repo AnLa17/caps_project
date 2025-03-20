@@ -374,6 +374,16 @@ a {
     transform: scale(1.1);
 }
 
+#cartContent {
+    margin: 20px auto; 
+    padding: 20px; 
+    max-width: 1200px; 
+    background-color: #f9f9f9; 
+    border-radius: 10px; 
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1); 
+    font-weight: normal;
+}
+
 #cartItems, #totalPrice {
     color: black;
     font-size: 16px;
@@ -382,6 +392,7 @@ a {
     border: 1px solid #ddd;
     border-radius: 5px;
     margin: 20px;
+    
 }
 
 .cart-items {
@@ -389,6 +400,8 @@ a {
     padding: 10px;
     background-color: #f9f9f9;
     border-radius: 5px;
+    ;
+    
 }
 
 .cart-item {
@@ -402,22 +415,51 @@ a {
     border-radius: 5px;
 }
 
-.cart-item button {
-    background-color: purple;
-    color: white;
-    border: none;
-    border-radius: 3px;
-    padding: 5px 10px;
-    cursor: pointer;
+.checkout-button {
+    display: block; 
+    width: 100%;
+    padding: 15px;
+    background-color: purple; 
+    color: white; 
+    font-size: 18px; 
+    font-weight: bold; 
+    text-transform: uppercase; 
+    border: none; 
+    border-radius: 5px; 
+    cursor: pointer; 
+    transition: background-color 0.3s ease, transform 0.2s ease;
+    margin-top: 20px; 
+
+.checkout-button:hover {
+    background-color: darkmagenta;
+    transform: scale(1.05); 
 }
 
-.cart-item button:hover {
-    background-color: darkmagenta;
+.cart-summary p {
+    font-weight: normal; 
+    font-size: 16px; 
+    color: #333; 
+    margin: 10px 0; 
+}
+
+.cart-summary span {
+    font-weight: normal; 
+    color: #000; 
+}
+
+.cart-summary {
+    text-align: center; 
+    margin: 20px auto; 
+    padding: 20px; 
+    background-color: #f9f9f9; 
+    border-radius: 10px;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1); 
+    max-width: 400px; 
 }
 
 .total-price {
     font-size: 1.2em;
-    font-weight: bold;
+    font-weight: normal;
     text-align: right;
     margin-top: 20px;
 }
@@ -450,6 +492,22 @@ a {
     font-size: 28px;
     font-weight: bold;
     cursor: pointer;
+}
+
+.remove-button {
+    background-color: black;
+    color: white;
+    border: none;
+    border-radius: 3px;
+    padding: 5px 10px;
+    cursor: pointer;
+    font-size: 14px;
+    transition: background-color 0.3s ease;
+    margin-left: 10px; /* Abstand zum Text */
+}
+
+.remove-button:hover {
+    background-color: grey;
 }
 
 
