@@ -1,5 +1,5 @@
 from flask import Flask, request, render_template, redirect, url_for, session, flash
-from models import db, User
+from db import db, User
 
 app = Flask(__name__)
 app.secret_key = 'dein_geheimes_schlüssel'
