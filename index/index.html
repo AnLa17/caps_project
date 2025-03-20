@@ -112,7 +112,7 @@
         <div class="modal-content">
             <span class="close" onclick="closeModal('registerModal')">&times;</span>
             <h2>Registrieren</h2>
-            <form action="registerForm" method="post">
+            <form id="registerForm" action="#" method="post">
                 <label for="usernameRegister">Benutzername:</label>
                 <input type="text" id="usernameRegister" name="username" required>
                 <br>
@@ -120,18 +120,11 @@
                 <input type="password" id="passwordRegister" name="password" required>
                 <br>
                 <button type="submit">Registrieren</button>  
-            </form>
-            <div id="registerSuccess" style="color: green; display: none;">
-                Registrierung erfolgreich!
-            </div>
-            <div id="registerError" style="color: red; display: none;">
-                Fehler bei der Registrierung!
-            </div>            
+            </form>         
         </div>
     </div>
     
 
-    <script src="/static/scripts.js"></script>
 </body>
 </html>
 

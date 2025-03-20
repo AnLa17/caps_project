@@ -2,7 +2,7 @@ from flask import Flask, render_template, request, redirect, url_for, flash, ses
 from flask_sqlalchemy import SQLAlchemy
 from werkzeug.security import generate_password_hash, check_password_hash
 
-app = Flask(__name__)
+app = Flask(__name__, template_folder="index")
 app.secret_key = 'geheim_schluessel'
 app.config['SQLALCHEMY_DATABASE_URI'] = 'sqlite:///users.db'
 db = SQLAlchemy(app)
@@ -27,8 +27,8 @@ def home():
 def login():
     username = request.form['username']
     password = request.form['password']
-    user = User.query.filter_by(username=username).first()
-    if user and user.check_password(password):
+    users = users.query.filter_by(username=username).first()
+    if User and User.check_password(password):
         session['user_id'] = user.id
         flash('Login erfolgreich!')
         return redirect(url_for('home'))
@@ -40,14 +40,18 @@ def register():
     username = request.form['username']
     password = request.form['password']
 
+    # Überprüfen, ob der Benutzername bereits existiert
     if User.query.filter_by(username=username).first():
         return "Benutzername existiert bereits!", 400
 
+    # Benutzer erstellen und speichern
     new_user = User(username=username)
-    new_user.set_password(password)
+    new_user.set_password(password)  # Passwort hashen
     db.session.add(new_user)
     db.session.commit()
+
     return "Registrierung erfolgreich!", 200
+
 
 
 
