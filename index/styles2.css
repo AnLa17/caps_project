@@ -287,6 +287,11 @@ main {
     text-align: center; 
 }
 
+.salesImage {
+    text-align: left;
+    margin-left: -100px;
+}
+
 .sale-container {
     position: relative; 
 }
@@ -294,7 +299,7 @@ main {
 .saleBadge {
     position: absolute; 
     top: -20px; 
-    left: -30px;
+    left: -20px;
     width: 80px; 
     height: auto; 
     z-index: 10; 
@@ -380,3 +385,6 @@ main {
     box-shadow: 0 4px 6px rgba(0, 0, 0, 0.2); 
     background: linear-gradient(90deg, #3a003a, #4b004b); 
 }
+
+
+
