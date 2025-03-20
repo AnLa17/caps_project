@@ -39,6 +39,9 @@
                 <a href="mailto: hallo@caps.com"><img src="/img/icons/mailicon.png" alt="Mail"></a>
                 <a href="/index/kontakt.html"><img src="/img/icons/contacticon.png" alt="Kontakt"></a>
                 <a href="/index/cart.html"><img src="/img/icons/carticon.png" alt="Einkaufswagen"></a>
+                <button class="login-button" onclick="openModal('loginModal')">🔑 Login</button>
+                <button class="register-button" onclick="openModal('registerModal')">✏️ Registrieren</button>
+                
             </div>
         </div>
         
@@ -78,46 +81,59 @@
             </div>
         </div>
 
-        <!-- Icon -->
-<div>
-    <button onclick="openModal('loginModal')">Login</button>
-    <button onclick="openModal('registerModal')">Registrieren</button>
-</div>
-
-<!-- Login Modal -->
-<div id="loginModal" class="modal">
-    <div class="modal-content">
-        <span class="close" onclick="closeModal('loginModal')">&times;</span>
-        <h1>Login</h1>
-        <form action="/login" method="post">
-            <label for="username">Benutzername:</label>
-            <input type="text" id="username" name="username" required>
-            <br>
-            <label for="password">Passwort:</label>
-            <input type="password" id="password" name="password" required>
-            <br>
-            <button type="submit">Einloggen</button>
-        </form>
+        <!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Dein Shop</title>
+    <link rel="stylesheet" href="/static/style.css">
+</head>
+<body>
+    
+    <!-- Login-Popup -->
+    <div id="loginModal" class="modal">
+        <div class="modal-content">
+            <span class="close" onclick="closeModal('loginModal')">&times;</span>
+            <h2>Login</h2>
+            <form action="/login" method="post">
+                <label for="usernameLogin">Benutzername:</label>
+                <input type="text" id="usernameLogin" name="username" required>
+                <br>
+                <label for="passwordLogin">Passwort:</label>
+                <input type="password" id="passwordLogin" name="password" required>
+                <br>
+                <button type="submit">Einloggen</button>
+            </form>
+        </div>
     </div>
-</div>
-
-<!-- Register Modal -->
-<div id="registerModal" class="modal">
-    <div class="modal-content">
-        <span class="close" onclick="closeModal('registerModal')">&times;</span>
-        <h1>Registrieren</h1>
-        <form action="/register" method="post">
-            <label for="username">Benutzername:</label>
-            <input type="text" id="username" name="username" required>
-            <br>
-            <label for="password">Passwort:</label>
-            <input type="password" id="password" name="password" required>
-            <br>
-            <button type="submit">Registrieren</button>
-        </form>
+    <!-- Register-Popup -->
+    <div id="registerModal" class="modal">
+        <div class="modal-content">
+            <span class="close" onclick="closeModal('registerModal')">&times;</span>
+            <h2>Registrieren</h2>
+            <form action="registerForm" method="post">
+                <label for="usernameRegister">Benutzername:</label>
+                <input type="text" id="usernameRegister" name="username" required>
+                <br>
+                <label for="passwordRegister">Passwort:</label>
+                <input type="password" id="passwordRegister" name="password" required>
+                <br>
+                <button type="submit">Registrieren</button>  
+            </form>
+            <div id="registerSuccess" style="color: green; display: none;">
+                Registrierung erfolgreich!
+            </div>
+            <div id="registerError" style="color: red; display: none;">
+                Fehler bei der Registrierung!
+            </div>            
+        </div>
     </div>
-</div>
+    
 
+    <script src="/static/scripts.js"></script>
+</body>
+</html>
 
 
     </main>
@@ -161,6 +177,6 @@
     </footer>
 
 <script src="index.js"></script>
-<script src="login.js"></script>
+<script src="login_register.js"></script>
 </body>
 </html>
