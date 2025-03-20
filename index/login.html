@@ -3,19 +3,19 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Registrierung</title>
+    <title>Login</title>
 </head>
 <body>
-    <h1>Registrieren</h1>
-    <form action="/register" method="post">
+    <h1>Einloggen</h1>
+    <form action="/login" method="post">
         <label for="username">Benutzername:</label>
         <input type="text" id="username" name="username" required>
         <br>
         <label for="password">Passwort:</label>
         <input type="password" id="password" name="password" required>
         <br>
-        <button type="submit">Registrieren</button>
+        <button type="submit">Einloggen</button>
     </form>
-    <p>Hast du bereits ein Konto? <a href="/login">Einloggen</a></p>
+    <p>Kein Konto? <a href="/register">Registrieren</a></p>
 </body>
 </html>
