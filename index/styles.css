@@ -41,6 +41,7 @@ nav {
     flex: 2;
     display: flex;
     justify-content: center;
+    margin-left: 30px
 }
 
 .limitedOfferContainer {
@@ -88,7 +89,7 @@ nav {
     display: flex;
     justify-content: center; /* Menüelemente zentrieren */
     gap: 50px; /* Abstand zwischen Menüelementen */
-    margin-left: 480px;
+    margin-left: 440px;
 }
 
 .underlimitedOfferIcons {
