@@ -545,84 +545,91 @@ a {
 /* Cookie-Banner */
 .cookie-banner {
     position: fixed;
-    top: 50%; /* Zentriert vertikal */
-    left: 50%; /* Zentriert horizontal */
-    transform: translate(-50%, -50%); /* Perfekte Zentrierung */
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
     width: 90%;
-    max-width: 400px;
-    background-color: #f0f0f0;
-    padding: 20px;
+    max-width: 600px;
+    height: auto;
+    padding: 0;
+    background: none;
+    border: none;
     text-align: center;
     z-index: 1000;
-    border-radius: 10px;
-    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2);
-    overflow: hidden; /* Verhindert, dass Inhalte über den Rand hinausgehen */
-}
-
-/* Schwarze Leiste oben */
-.cookie-header {
-    background-color: black;
-    padding: 10px 0;
-    display: flex;
-    align-items: center;
-    justify-content: flex-start; /* Logo links ausrichten */
-    width: 100%;
-    margin: 0;
     border-radius: 0;
-    box-sizing: border-box;
-
+    box-shadow: none;
+    overflow: hidden;
+    font-family: "Oswald", sans-serif; /* Schriftart Oswald */
 }
 
-/* Logo in der schwarzen Leiste */
-.cookie-logo {
-    height: 15px; /* Höhe des Logos anpassen */
-    margin-left: 10px; /* Abstand vom linken Rand */
+/* Bild im Cookie-Banner */
+.cookie-banner-image {
+    width: 100%;
+    height: auto;
+    display: block;
+    margin: 0;
+    border: none;
+    border-radius: 15px; /* Abrundung der Ecken */
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2); /* Schatteneffekt */
 }
 
-/* Text im Cookie-Banner */
-.cookie-banner h3 {
-    margin-top: 20px; /* Abstand zur schwarzen Leiste */
+/* Text über dem Bild */
+.cookie-text {
+    position: absolute; /* Positioniert den Text über dem Bild */
+    top: 10%; /* Abstand vom oberen Rand */
+    left: 25%;
+    transform: translateX(-50%);
+    color: white; /* Weißer Text */
+    text-align: center;
+    padding: 0 20px; /* Abstand für besseren Lesekomfort */
+    font-weight: normal;
+}
+
+.cookie-text h1 {
+    font-size: 2rem; /* Größe der Überschrift */
     margin-bottom: 10px;
-    font-size: 1.5rem;
-    color: #333;
 }
 
-.cookie-banner p {
-    margin: 0 0 15px;
-    font-size: 1rem;
-    color: #333;
+.cookie-text p {
+    font-size: 1rem; /* Größe des Textes */
+    line-height: 1.5; /* Zeilenhöhe für bessere Lesbarkeit */
+    margin: 0;
+    font-weight: 250;
+}
+
+/* Link im Text */
+.cookie-link {
+    color: purple; /* Link in Purple */
+    text-decoration: none; /* Entfernt die Unterstreichung */
+    font-weight: 300;
+}
+
+.cookie-link:hover {
+    text-decoration: underline; /* Unterstreichung beim Hover */
+}
+
+/* Container für die Buttons */
+.cookie-buttons {
+    position: absolute;
+    bottom: 40px;
+    left: 60px;
+    display: flex;
+    gap: 10px;
 }
 
 /* Buttons im Cookie-Banner */
-.cookie-banner button {
-    background-color: purple;
+.cookie-buttons button {
+    background-color: grey;
     color: white;
     border: none;
-    padding: 10px 20px;
+    padding: 5px 10px;
     cursor: pointer;
-    border-radius: 5px;
-    font-size: 1rem;
-    margin: 0 10px;
+    border-radius: 3px;
+    font-size: 0.9rem;
     transition: background-color 0.3s ease;
 }
 
-.cookie-banner button:hover {
-    background-color: grey;
+.cookie-buttons button:hover {
+    background-color: purple;
 }
 
-/* Verhindert Scrollen im Hintergrund */
-body.no-scroll {
-    overflow: hidden;
-}
-
-/* Link im Cookie-Banner */
-.cookie-banner a {
-    color: purple; /* Setzt die Farbe des Links auf Purple */
-    text-decoration: none; /* Entfernt die Unterstreichung */
-    font-weight: normal; /* Optional: Macht den Link fett */
-}
-
-.cookie-banner a:hover {
-    text-decoration: underline; /* Unterstreichung beim Hover */
-    color: darkmagenta; /* Optional: Ändert die Farbe beim Hover */
-}
