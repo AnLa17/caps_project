@@ -39,8 +39,11 @@ document.addEventListener('DOMContentLoaded', function() {
 
   // Zeigt das Banner an, wenn das Cookie nicht vorhanden ist
   if (!getCookie('cookieAccepted')) {
-      cookieBanner.style.display = 'block';
-  }
+    cookieBanner.style.display = 'block';
+} /*else {
+    cookieBanner.style.display = 'none';
+} */
+
 
   // Ereignislistener für den Akzeptieren-Button
   acceptCookiesButton.addEventListener('click', function() {
