@@ -559,56 +559,55 @@ a {
     border-radius: 0;
     box-shadow: none;
     overflow: hidden;
-    font-family: "Oswald", sans-serif; /* Schriftart Oswald */
+    font-family: "Oswald", sans-serif; 
 }
 
-/* Bild im Cookie-Banner */
+
 .cookie-banner-image {
     width: 100%;
     height: auto;
     display: block;
     margin: 0;
     border: none;
-    border-radius: 15px; /* Abrundung der Ecken */
-    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2); /* Schatteneffekt */
+    border-radius: 15px; 
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2); 
 }
 
-/* Text über dem Bild */
+
 .cookie-text {
-    position: absolute; /* Positioniert den Text über dem Bild */
-    top: 10%; /* Abstand vom oberen Rand */
+    position: absolute; 
+    top: 10%; 
     left: 25%;
     transform: translateX(-50%);
-    color: white; /* Weißer Text */
+    color: white; 
     text-align: center;
-    padding: 0 20px; /* Abstand für besseren Lesekomfort */
+    padding: 0 20px; 
     font-weight: normal;
 }
 
 .cookie-text h1 {
-    font-size: 2rem; /* Größe der Überschrift */
+    font-size: 2rem; 
     margin-bottom: 10px;
 }
 
 .cookie-text p {
-    font-size: 1rem; /* Größe des Textes */
-    line-height: 1.5; /* Zeilenhöhe für bessere Lesbarkeit */
+    font-size: 1rem; 
+    line-height: 1.5; 
     margin: 0;
     font-weight: 250;
 }
 
-/* Link im Text */
+
 .cookie-link {
-    color: purple; /* Link in Purple */
-    text-decoration: none; /* Entfernt die Unterstreichung */
+    color: purple; 
+    text-decoration: none;
     font-weight: 300;
 }
 
 .cookie-link:hover {
-    text-decoration: underline; /* Unterstreichung beim Hover */
+    text-decoration: underline; 
 }
 
-/* Container für die Buttons */
 .cookie-buttons {
     position: absolute;
     bottom: 40px;
@@ -617,7 +616,6 @@ a {
     gap: 10px;
 }
 
-/* Buttons im Cookie-Banner */
 .cookie-buttons button {
     background-color: grey;
     color: white;
