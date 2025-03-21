@@ -540,3 +540,88 @@ a {
 .remove-button:hover {
     background-color: grey;
 }
+
+/* Cookie-Banner */
+.cookie-banner {
+    position: fixed;
+    top: 50%; /* Zentriert vertikal */
+    left: 50%; /* Zentriert horizontal */
+    transform: translate(-50%, -50%); /* Perfekte Zentrierung */
+    width: 90%;
+    max-width: 400px;
+    background-color: #f0f0f0;
+    padding: 20px;
+    text-align: center;
+    z-index: 1000;
+    border-radius: 10px;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2);
+    overflow: hidden; /* Verhindert, dass Inhalte über den Rand hinausgehen */
+}
+
+/* Schwarze Leiste oben */
+.cookie-header {
+    background-color: black;
+    padding: 10px 0;
+    display: flex;
+    align-items: center;
+    justify-content: flex-start; /* Logo links ausrichten */
+    width: 100%;
+    margin: 0;
+    border-radius: 0;
+    box-sizing: border-box;
+
+}
+
+/* Logo in der schwarzen Leiste */
+.cookie-logo {
+    height: 15px; /* Höhe des Logos anpassen */
+    margin-left: 10px; /* Abstand vom linken Rand */
+}
+
+/* Text im Cookie-Banner */
+.cookie-banner h3 {
+    margin-top: 20px; /* Abstand zur schwarzen Leiste */
+    margin-bottom: 10px;
+    font-size: 1.5rem;
+    color: #333;
+}
+
+.cookie-banner p {
+    margin: 0 0 15px;
+    font-size: 1rem;
+    color: #333;
+}
+
+/* Buttons im Cookie-Banner */
+.cookie-banner button {
+    background-color: purple;
+    color: white;
+    border: none;
+    padding: 10px 20px;
+    cursor: pointer;
+    border-radius: 5px;
+    font-size: 1rem;
+    margin: 0 10px;
+    transition: background-color 0.3s ease;
+}
+
+.cookie-banner button:hover {
+    background-color: grey;
+}
+
+/* Verhindert Scrollen im Hintergrund */
+body.no-scroll {
+    overflow: hidden;
+}
+
+/* Link im Cookie-Banner */
+.cookie-banner a {
+    color: purple; /* Setzt die Farbe des Links auf Purple */
+    text-decoration: none; /* Entfernt die Unterstreichung */
+    font-weight: normal; /* Optional: Macht den Link fett */
+}
+
+.cookie-banner a:hover {
+    text-decoration: underline; /* Unterstreichung beim Hover */
+    color: darkmagenta; /* Optional: Ändert die Farbe beim Hover */
+}
