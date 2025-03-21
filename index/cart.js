@@ -12,6 +12,7 @@ function addToCart(productName, price) {
 
     localStorage.setItem('cart', JSON.stringify(cart));
     alert(`${productName} wurde zum Warenkorb hinzugefügt!`);
+    alert.close
 }
 
 document.addEventListener('DOMContentLoaded', () => {
