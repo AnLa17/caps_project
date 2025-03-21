@@ -29,7 +29,7 @@ def login():
     password = request.form['password']
     users = users.query.filter_by(username=username).first()
     if User and User.check_password(password):
-        session['user_id'] = user.id
+        session['user_id'] = User.id
         flash('Login erfolgreich!')
         return redirect(url_for('home'))
     flash('Falscher Benutzername oder Passwort.')
